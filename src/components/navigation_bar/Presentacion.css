@@ -1,0 +1,38 @@
+.container-titulo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fixed-image {
+    position: fixed;
+    left: 100px;
+    width: 200px; /* ajusta según sea necesario */
+    z-index: -1;
+  }
+  
+  .titulo-content {
+    padding-top: 20px; /* ajusta según sea necesario */
+    font-size: 2rem;
+  }
+  
+  .container-cajas {
+    position: relative;
+    padding-top: 180px; /* ajusta según sea necesario */
+    overflow-y: scroll; /* agrega el desplazamiento vertical */
+    height: calc(100vh - 180px); /* ajusta según sea necesario */
+  }
+  
+  .caja-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .caja {
+    width: calc(30% - 30px); /* ajusta según sea necesario */
+    height: 300px; /* ajusta según sea necesario */
+    background-color: #ccc;
+    margin: 20px;
+  }
+

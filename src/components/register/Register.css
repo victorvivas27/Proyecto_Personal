@@ -1,0 +1,103 @@
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    background-color: #585151;
+}
+.form{
+    padding: 25px;
+    background: #85cbdd;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    color: #2c3e50;
+} 
+.contenedor-label-input{
+    margin-bottom: 15px;
+  position: relative;
+}
+form label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+  form input {
+    height: 45px;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    background: #fff;
+    border-radius: 3px;
+    border: 2px solid #bfbfbf;
+    box-shadow: 10px 4px 8px rgba(5, 5, 233, 0.9); /* Sombra de caja más fuerte */
+  }
+  form input:focus {
+  border-color: #0e0d0d;
+
+}
+.submit-btn {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .submit-btn input {
+    color: #f3f3f3;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #000000;
+    transition: background 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Sombra de caja más fuerte */
+  }
+  .submit-btn input:hover {
+    background: #02156d;
+  }
+  
+  .submit-btn input:active {
+    transform: scale(0.95);
+  } 
+  .mensaje-error{
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #f91919;
+    border: 1px solid #f91919;
+    display: inline-block; /* Cambiado de display: block; a display: inline-block; */
+    padding: 4px;
+    border-radius: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de caja más fuerte */
+    
+  }
+  fieldset{
+    border:3px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .watch{
+    display: flex;
+  
+  }
+  .watch i{
+      margin-right: 4px;
+      font-size: 20px;
+  }
+  .login{
+    font-size: 1rem;
+    padding: 0 20px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: #ecf0f1;
+    border-radius: 20px;
+  }
+  .login:hover{
+    background-color: #02156d;
+  }

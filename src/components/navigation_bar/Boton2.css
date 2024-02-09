@@ -1,0 +1,16 @@
+.boton3 {
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.3em 1em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #15c908;
+    transition: all 1s ease;
+    position: relative;
+  }
+  .boton3:hover {
+    background: #318aac;
+    color: #ffffff !important;
+  }
+  
