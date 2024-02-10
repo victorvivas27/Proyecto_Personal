@@ -5,9 +5,6 @@ import "./MiPerfil.css"
 import { useNavigate } from "react-router-dom";
 import {useEliminarDireccion} from "./EliminarDireccion";
 import { MyContext } from "../../contexto/MyContext";
-
-
-
 export const MiPerfil = () => {
   const {setUsuario,usuario,setActualizar,actualizar}=useContext(MyContext)
   const eliminarDireccion = useEliminarDireccion()
@@ -32,6 +29,9 @@ export const MiPerfil = () => {
   const agregarDireccion=()=>{
     navegacion("/agregardireccion");
   }
+  const agregarTelefono=()=>{
+    navegacion("/agregardireccion");
+  }
   const eliminar = (direccionId) => {    
     if (window.confirm('¿Estás seguro de que deseas eliminar esta dirección?')) {
       eliminarDireccion(direccionId); 
@@ -48,9 +48,8 @@ export const MiPerfil = () => {
 }
   return (
     <>
-    <div className="body">
     <div className="container-perfil">
-      <div> <img src="" alt=""></img>  </div>
+      <div> <img src="" alt=""/>IMAGEN</div>
     {usuario && (
           <div key={usuario.id} className="datos">
           <h1>Mi Perfil</h1>
@@ -86,9 +85,9 @@ export const MiPerfil = () => {
           </div>
           )}
        <div><button className="boton3 boton-perfil" onClick={agregarDireccion}>Agregar Direccion</button></div>
+       <div><button className="boton3 boton-perfil" onClick={agregarTelefono}>Agregar Telefono</button></div>
        <span><Volver/></span>
        </div>
-      </div>
     </>
   )
 }

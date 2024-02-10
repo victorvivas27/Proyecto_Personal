@@ -1,8 +1,10 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import "./MiPerfil.css"
 import { Volver } from "../click-volver/Volver";
 import { agregarDireccion } from "../../util/AgregarDireccion";
+import { AgregarTelefono } from "./AgregarTelefono";
 export const AgregarDireccion = () => {
     const {register,handleSubmit,formState: { errors },setFocus,reset,watch,} = useForm()
     const navigate = useNavigate();
@@ -44,7 +46,7 @@ export const AgregarDireccion = () => {
   return (
    <>
      <div className="form-container border">
-     <h2>Agregar Direccion </h2>
+     <h2>Agregar Direccion o Telefono </h2>
      <Volver/>
      <form className="form border" onSubmit={handleSubmit(onSubmit)}>
      <fieldset>
@@ -182,6 +184,7 @@ export const AgregarDireccion = () => {
     <input type="submit" value="Agregar Direccion" />
     </div>
     </form>
+    <AgregarTelefono/>
     </div>
     </>
   )

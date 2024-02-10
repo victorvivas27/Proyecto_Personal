@@ -11,6 +11,7 @@ import { AgregarDireccion } from "../components/perfil/AgregarDireccion"
 
 
 
+
  export const RouterNavBar = () => {
   return (
     <>
@@ -24,6 +25,7 @@ import { AgregarDireccion } from "../components/perfil/AgregarDireccion"
       <Route path="/miperfil" element={<MiPerfil/>} />
       <Route path="/miscompras" element={<MisCompras/>} />
       <Route path="/agregardireccion" element={<AgregarDireccion/>} />
+    
       <Route path="/" element={<Navigate to="home"/>} />
     </Routes>
     </>
